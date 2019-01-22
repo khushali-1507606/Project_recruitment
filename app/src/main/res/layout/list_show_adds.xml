@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_alignParentTop="true" android:padding="8dp">
+
+
+    <TableRow>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="ID" android:id="@+id/textViewShowAddsId"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Advt. Number" android:id="@+id/textViewShowAddsAdvNo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Description" android:id="@+id/textViewShowAddsDesc"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="400dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorPrimary" android:text="Attached File" android:id="@+id/textViewShowAddsAttachedFile"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="140dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Start Date" android:id="@+id/textViewShowAddsStartDate"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="End Date" android:id="@+id/textViewShowAddsEndDate"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="8dp" android:textSize="18dp" android:text="Apply" android:id="@+id/buttonShowAdds_Apply" android:background="@color/colorBlue"/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>

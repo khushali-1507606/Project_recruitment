@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/textViewShowAddsHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorMaroon"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Exam"
+        android:layout_marginTop="10dp" android:gravity="center_horizontal"
+        android:fontFamily="@font/britanic"/>
+<HorizontalScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent" android:background="#f4f4f4" android:orientation="vertical" >
+        <!-- <ExpandableListView android:id="@+id/lvExp" android:layout_height="match_parent" android:layout_width="match_parent"/> -->
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:padding="4dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true">
+            <TableRow
+                android:background="@color/colorMaroon">
+                <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text="Sr.No."/>
+                <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"  android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text="Adv. Number"/>
+                <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"   android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text="Applied Division"/>
+                <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"   android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text="Applied Post"/>
+
+                <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"   android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text="Time (in minutes)"/>
+                <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp"   android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" android:text=""/>
+            </TableRow>
+        </TableLayout>
+        <ListView android:id="@+id/listViewShowTest" android:layout_height="wrap_content" android:layout_width="match_parent"> </ListView>
+    </LinearLayout>
+</HorizontalScrollView>
+</LinearLayout>

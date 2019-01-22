@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.admin.nidhi_khushali.Results_create"
+    android:padding="5dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="271dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/sofia"
+        android:text="Create Result"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:src="@drawable/manage" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="60dp"
+    android:layout_weight="2">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Ad No."
+        android:fontFamily="@font/sofia"
+        android:textSize="20dp"
+        android:textColor="@color/colorPurple"/>
+
+    <Spinner
+        android:id="@+id/spnrGetAdv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Division Name"
+        android:fontFamily="@font/sofia"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spnrDivision"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Post Name"
+        android:fontFamily="@font/sofia"
+        android:textColor="@color/colorPurple"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spnrPost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="No.of students to be selected for further procedure"
+            android:fontFamily="@font/sofia"
+            android:textSize="20dp"
+            android:textColor="@color/colorPurple"/>
+        <EditText
+            android:id="@+id/edTextVacancies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:layout_weight="1"
+            android:hint="Enter No of students"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofia"
+            android:text="Message"
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Messge for Passed Candidates"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:selectAllOnFocus="true"
+            android:singleLine="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/buttonSaveResult"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:fontFamily="@font/brushci"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"/>
+        <Button
+            android:id="@+id/buttonResetResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:fontFamily="@font/brushci"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

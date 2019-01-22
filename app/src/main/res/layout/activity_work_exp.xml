@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EduQual">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:text="Application Form"
+                android:fontFamily="@font/sofia"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="54dp"
+                android:src="@drawable/png_image" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Work Experience(Previous Employment) related with the post(if any)"
+            android:textAlignment="center"
+            android:textColor="@color/colorPurple"
+            android:textSize="18dp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp">
+
+                <TableRow >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_layout"
+                        android:padding="8dp"
+                        android:text="Organization"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_layout"
+                        android:padding="8dp"
+                        android:text="Position Held"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_layout"
+                        android:padding="8dp"
+                        android:text="Date of Joining"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18dp"
+
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_layout"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:text="Date of Leaving"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_layout"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+
+                        android:text="Salary Drawn"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow >
+
+                    <EditText
+                        android:id="@+id/o1"
+                        android:layout_width="193dp"
+                        android:padding="5dp"
+
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+
+                        android:hint="Organization eg:-PRSC"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/p1"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Position Held eg:- ResearchFellow,Software Developer"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/y1"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/yf1"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/s1"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:padding="5dp"
+
+                        android:ellipsize="start"
+                        android:hint="Salary Drawn"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+                </TableRow>
+
+
+                <TableRow >
+
+                    <EditText
+                        android:id="@+id/o2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:padding="5dp"
+
+                        android:hint="Organization"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/p2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:hint="Position Held"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/y2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/yf2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/s2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Salary Drawn"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow >
+
+                    <EditText
+                        android:id="@+id/o3"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:padding="5dp"
+
+                        android:ellipsize="start"
+                        android:hint="Organization"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/p3"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:padding="5dp"
+
+                        android:ellipsize="start"
+                        android:hint="Position Held"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/y3"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/yf3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/s3"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Salary Drawn"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/o4"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:padding="5dp"
+
+
+                        android:hint="Organization"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/p4"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Position Held"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/y4"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:focusable="false"
+
+                        android:padding="5dp"
+
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/yf4"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/s4"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:padding="5dp"
+
+                        android:hint="Salary Drawn"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/o5"
+                        android:layout_width="184dp"
+                        android:padding="5dp"
+
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Organization"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/p5"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+
+                        android:layout_height="52dp"
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Position Held"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/y5"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/yf5"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:focusable="false"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="DD-MM-YYYY"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/s5"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:padding="5dp"
+
+                        android:background="@drawable/table_layout"
+                        android:ellipsize="start"
+                        android:hint="Salary Drawn"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+                </TableRow>
+
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/buttonNextw"
+            android:padding="5dp"
+            android:text="Next"
+            android:background="@drawable/button_selector2"
+            android:textColor="@color/colorWhite"
+
+            />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout2"
+    android:layout_height="match_parent"
+    tools:context="com.admin.nidhi_khushali.Admin_main"
+  >
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="98dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="65dp"
+            android:background="@null"
+            android:src="@drawable/thumbnail_prsc" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginEnd="69dp"
+            android:text="PRSC e-Recruitment"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/bottomNav"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageViewCreate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            app:srcCompat="@drawable/create" />
+
+        <ImageView
+            android:id="@+id/imageViewCandiDetails"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/candi" />
+
+        <ImageView
+            android:id="@+id/imageViewLogout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/log" />
+    </LinearLayout>
+
+
+</RelativeLayout>

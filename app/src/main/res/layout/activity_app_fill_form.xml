@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".AppFillForm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="271dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/sofia"
+        android:text="Application Form"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:src="@drawable/png_image" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Ad No."
+            android:fontFamily="@font/sofia"
+            android:textSize="20dp"
+            android:textColor="@color/colorPurple"/>
+
+        <TextView
+            android:id="@+id/TextViewAdno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/view_profile_edittext"
+            android:layout_weight="1"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Division Name"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spnrDivision"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Post Applied For"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spnrPost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Full Name"
+            android:fontFamily="@font/sofia"
+
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edYName"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+            android:background="@drawable/view_profile_edittext"
+            android:layout_weight="1"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Father's Name"
+                android:fontFamily="@font/sofia"
+
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edYname"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+                android:layout_height="match_parent"
+                android:background="@drawable/view_profile_edittext"
+
+                android:layout_weight="1"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:text="Email Address"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp" />
+
+           <EditText
+               android:id="@+id/edEmail"
+               android:layout_width="0dp"
+               android:padding="5dp"
+               android:layout_height="match_parent"
+               android:background="@drawable/view_profile_edittext"
+
+               android:layout_weight="1"
+               android:inputType="textWebEmailAddress" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gender"
+                android:fontFamily="@font/sofia"
+
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+           <RadioGroup
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               >
+
+               <RadioButton
+                   android:id="@+id/rbF"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Female"
+                   android:textColor="@color/colorAccent" />
+
+               <RadioButton
+                   android:id="@+id/rbM"
+                   android:layout_width="115dp"
+                   android:layout_height="wrap_content"
+                   android:text="Male"
+                   android:textColor="@color/colorAccent" />
+
+           </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D.O.B"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edDob"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:drawableRight="@drawable/pick_date"
+
+                android:clickable="true"
+                android:background="@drawable/view_profile_edittext"
+
+                android:editable="false"
+                android:focusable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Address"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/edAddress"
+                android:background="@drawable/view_profile_edittext"
+                android:padding="5dp"
+
+                android:inputType="textPostalAddress"
+
+
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Country"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/country">
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="State"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+            >
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Districts"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spDistrict"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                >
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact No."
+                android:fontFamily="@font/sofia"
+
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edContact"
+                android:layout_width="0dp"
+                android:padding="5dp"
+
+                android:inputType="phone"
+                android:layout_height="match_parent"
+                android:background="@drawable/view_profile_edittext"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nationality"
+                android:fontFamily="@font/sofia"
+
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edNationality"
+                android:layout_width="0dp"
+                android:padding="5dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofia"
+
+                android:text="Category"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:entries="@array/category">
+
+            </Spinner>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Marital Status"
+                android:fontFamily="@font/sofia"
+                android:textColor="@color/colorPurple"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spMarital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:entries="@array/marital_status">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_selector2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="30dp"
+            android:padding="8dp"
+            android:text="Next" />
+
+    </LinearLayout>
+</ScrollView>

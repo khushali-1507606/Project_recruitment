@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <font android:font="@font/alger"/>
+
+    <font android:font="@font/berhnc"/>
+    <font android:font="@font/britanic"/>
+    <font android:font="@font/casteller"/>
+    <font android:font="@font/magneto"/>
+    <font android:font="@font/brushci"/>
+
+
+</font-family>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/textViewShowAddsHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorMaroon"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Application History"
+        android:layout_marginTop="10dp" android:gravity="center_horizontal"
+        android:fontFamily="@font/britanic"/>
+<HorizontalScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationHistory">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:background="#f4f4f4" android:orientation="vertical" android:padding="0dp">
+    <!-- <ExpandableListView android:id="@+id/lvExp" android:layout_height="match_parent" android:layout_width="match_parent"/> -->
+    <TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="4dp" android:layout_marginTop="20dp" android:layout_alignParentTop="true">
+        <TableRow
+            android:background="@color/colorMaroon">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="ID"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite" android:text="Advertisement. Number"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp"  android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                 android:text="Division Name Applied In"/>
+            <TextView android:layout_height="match_parent" android:layout_width="180dp" android:padding="8dp"  android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+             android:text="Applied For                 "/>
+            <TextView android:layout_height="match_parent" android:layout_width="180dp" android:padding="8dp"  android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:text="Applied Date    "/>
+
+        </TableRow>
+    </TableLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewAppHis">
+        </ListView>
+    </LinearLayout>
+
+
+
+</HorizontalScrollView>
+</LinearLayout>

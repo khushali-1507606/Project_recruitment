@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relSplash"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorBlue"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageViewPRSC1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        app:srcCompat="@drawable/recimg" />
+
+    <TextView
+        android:id="@+id/textViewPRSC"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewPRSC"
+        android:layout_below="@+id/imageViewPRSC1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/britanic"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="PRSC e-RECRUITMENT"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPRSC"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/progressBarSplash"
+        android:layout_marginBottom="120dp"
+        app:srcCompat="@drawable/thumbnail_prsc" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:theme="@style/AppThemeProgress" />
+</LinearLayout>

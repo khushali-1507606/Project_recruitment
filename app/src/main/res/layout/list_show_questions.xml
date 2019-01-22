@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp">
+
+            <TableRow >
+                <TextView
+                    android:id="@+id/textViewQ_Id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sr.No."
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewQ_AdvNo"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Advt. Number"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/textViewQDivision"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Applied Division"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewQAppliedPost"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Applied Post"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"
+                    android:padding="8dp"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textViewQTime"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Time(in minutes)"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/buttonStartTest"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorMaroon"
+
+                    android:padding="8dp"
+                    android:text="Start"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".LastAppFill">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="271dp"
+            android:layout_height="match_parent"
+            android:text="Application Form"
+            android:fontFamily="@font/sofia"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="54dp"
+            android:src="@drawable/png_image" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text=" How in your opinion do you meet the job \n requirement as advertised?"
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_profile_edittext"
+        android:ems="10"
+        android:hint="Opinion"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text=" Two references with email address and phone number :-"
+
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:text=" Ref.1."
+
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edRef1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_profile_edittext"
+
+        android:hint="Enter Name,Email,Phone No."
+        android:text="" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:text=" Ref. 2."
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edRef2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_profile_edittext"
+            android:hint="Enter Name,Email,Phone No."
+            android:text="" />
+</LinearLayout>
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:id="@+id/imageView"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/create"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_selector2"
+                android:text="Upload Photo" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadPhoto"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_selector2"
+                android:text="Select Photo" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Declaration"
+            android:textColor="@color/colorPurple"
+            android:textSize="18dp"
+            />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbDec"
+                android:textColor="@color/colorPurple"
+                android:text="I affirm that the information given in this application is true and correct to the best of my knowledge and belief. I also fully understand that if at anhy stage is discovered that an attempt has been made by me to willfully conceal or misrepresent the facts ,my employmemt the facts ,my employment may  be terminated along with any other legal action deemed fit under the law."/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:layout_weight="1"
+            android:textColor="@color/colorPurple"
+            android:textSize="18dp"
+            android:id="@+id/textViewPlace"/>
+        <EditText
+            android:layout_width="0dp"
+            android:background="@drawable/view_profile_edittext"
+
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/edPlace"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:focusable="false"
+                android:id="@+id/textViewDate"
+                android:textColor="@color/colorPurple"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:hint="enter Place eg:-Ludhiana"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/view_profile_edittext"
+android:clickable="true"
+                android:focusable="false"
+                android:layout_weight="2"
+                android:hint="enter Date"
+                android:id="@+id/eddate"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <Button
+            android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:background="@drawable/button_selector2"
+                android:text="Save"/>
+            <Button
+                android:layout_width="0dp"
+                android:id="@+id/btnBack"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector2"
+                android:text="Back"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+
+    tools:context="com.admin.nidhi_khushali.AdminNewMain">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/sofia"
+        android:textSize="27dp"
+        android:text=" |** ADMIN **|     |  Welcome to Punjab Remote Sensing Centre Recruitments!  |     " />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:id="@+id/recAdmin">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+

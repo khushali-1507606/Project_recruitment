@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="15dp" android:layout_alignParentTop="true" android:layout_marginTop="20dp">
+
+
+    <TableRow>
+
+    <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Id" android:id="@+id/textViewCA_Id"/>
+
+    <TextView android:layout_width="180dp" android:layout_height="wrap_content" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Advt. Number" android:id="@+id/textViewCA_AdvNo"/>
+
+    <TextView android:layout_width="180dp" android:layout_height="wrap_content" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Division Name Applied In" android:id="@+id/textViewCA_DivisionNameApplied"/>
+
+    <TextView android:layout_width="180dp" android:layout_height="wrap_content" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Applied For" android:id="@+id/textViewCA_AppFor"/>
+
+    <TextView android:layout_width="140dp" android:layout_height="wrap_content" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Applied Date" android:id="@+id/textViewCA_AppDate"/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>

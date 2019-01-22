@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_layout"
+        android:padding="8dp"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewAdvNo."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/table_layout"
+        android:padding="8dp"
+        android:text="ADVERTISMENT NO."
+        android:textAlignment="center"
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_layout"
+
+        android:padding="8dp"
+        android:text="DESCRIPTION"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewATTCHED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_layout"
+
+        android:padding="8dp"
+        android:text="DESCRIPTION"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurple"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:background="@drawable/table_layout"
+        android:text="Apply Here" />
+
+
+</LinearLayout>

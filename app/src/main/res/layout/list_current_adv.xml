@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TableLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:layout_alignParentTop="true" android:padding="8dp">
+
+
+    <TableRow>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="ID" android:id="@+id/textViewCA_Id"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Advt. Number" android:id="@+id/textViewCA_AdvNo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="180dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Description" android:id="@+id/textViewCA_Desc"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="400dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorPrimary" android:text="Attachment" android:id="@+id/textViewCA_Attachment"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="140dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Date Created" android:id="@+id/textViewCA_DateCreated"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorBlack" android:text="Status" android:id="@+id/textViewCA_Status"/>
+
+        <Button android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorWhite" android:background="@color/colorBlue" android:layout_marginRight="8dp" android:text="Close" android:id="@+id/textViewCA_Close"/>
+
+        <Button android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorWhite" android:background="@color/colorYellow" android:text="Edit" android:layout_marginRight="8dp" android:id="@+id/textViewCA_Edit"/>
+
+        <Button android:layout_height="wrap_content" android:layout_width="100dp" android:padding="8dp" android:textSize="18dp" android:textColor="@color/colorWhite" android:background="@color/colorMaroon" android:text="Hide" android:id="@+id/textViewCA_Delete"/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Test_create__adv">
+
+    <TextView
+        android:id="@+id/textViewNewAdv"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="  New Advertisement"
+        android:fontFamily="@font/sofia"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/images_hirex"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+
+    <EditText
+        android:id="@+id/editTextAdvNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="18dp"
+        android:maxLength="7"
+        android:background="@drawable/shape"
+        android:hint="Advertisement number"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/editTextAdvDesc"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:background="@drawable/shape"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:hint=" Description..."
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextAdvDateCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        android:background="@drawable/shape"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:editable="false"
+        android:focusable="false"
+        android:drawableRight="@drawable/pick_date"
+        android:drawablePadding="20dp"
+        android:hint=" Starting Date"/>
+
+    <EditText
+        android:id="@+id/editTextAdvValidityDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        android:background="@drawable/shape"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:editable="false"
+        android:focusable="false"
+        android:drawableRight="@drawable/pick_date"
+        android:drawablePadding="20dp"
+        android:hint=" Ending Date"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/buttonAdvAttachment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            android:background="@drawable/button_selector3"
+            android:textSize="15dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textViewAdvAttchmentName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="choose file..."
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+<Spinner
+    android:id="@+id/spinnerAdvNoOfDivisions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_spinner"
+    style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+    <LinearLayout
+        android:id="@+id/Nod1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Nod3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+
+        android:id="@+id/spinnerAdvPost4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Nod8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spinnerAdvDiv8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></Spinner>
+
+        <TextView
+            android:id="@+id/spinnerAdvPost8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"></TextView>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerAdvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_spinner"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        ></Spinner>
+
+
+    <Button
+        android:id="@+id/buttonAdvCreateAdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector3"
+        android:text="Create"
+        android:textSize="15dp"/>
+
+    
+
+</LinearLayout>
+</ScrollView>

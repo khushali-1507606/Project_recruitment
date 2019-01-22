@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <item
+            android:id="@+id/create_ad"
+            android:title="Manage Advertisement"
+            android:icon="@drawable/create"/>
+        <item
+            android:id="@+id/candi"
+            android:title="Candidate Details"
+            android:icon="@drawable/candi"/>
+
+        <item
+            android:id="@+id/logout1"
+            android:icon="@drawable/log"
+            android:title="Logout" />
+</menu>

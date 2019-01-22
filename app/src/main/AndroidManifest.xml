@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.win_10.newapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rec_logo"
+        android:label="PRSC e-Recruitment"
+        android:name="com.util.AppController"
+        android:roundIcon="@drawable/rec_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Register"
+            android:label="  Registration Page"
+            android:theme="@style/AppThemeLogin" />
+        <activity
+            android:name=".Login"
+            android:label="    "
+            android:theme="@style/AppThemeLogin" />
+        <activity
+            android:name=".AppFillForm"
+            android:label="Application Form" />
+        <activity
+            android:name=".EduQual"
+            android:label="Application Form" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.admin.nidhi_khushali.Admin_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangeUSerPassword"
+            android:label="   " />
+        <activity
+            android:name=".WorkExp"
+            android:label="Application Form" />
+        <activity
+            android:name=".LastAppFill"
+            android:label="Application Form" />
+        <activity
+            android:name="com.admin.nidhi_khushali.Quiz_activity"
+            android:label=" Online Test" />
+        <activity
+            android:name="com.admin.nidhi_khushali.Test_create__adv"
+            android:label="Create Advertisement"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".NewNavigation"
+            android:label="      "
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.admin.nidhi_khushali.AdminNewMain"
+            android:label="    " />
+        <activity
+            android:name="com.admin.nidhi_khushali.CandidateDetails"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name="com.admin.nidhi_khushali.currentAdvertisements"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name=".ApplicationHistory"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name=".LatestAdvs"
+            android:label=" " />
+        <activity android:name=".showAddsToUsers" />
+        <activity
+            android:name="com.admin.nidhi_khushali.ExamHomeAct4"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name=".AboutUs"
+            android:label=" " />
+        <activity
+            android:name="com.admin.nidhi_khushali.pastCandidates"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name="com.admin.nidhi_khushali.allAdvertisements"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name="com.admin.nidhi_khushali.CandidateScore"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name="com.admin.nidhi_khushali.Results_create"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity
+            android:name="com.admin.nidhi_khushali.Results_show"
+            android:label=" "
+            android:theme="@style/AppThemeCandi" />
+        <activity android:name=".PrscWebsite" />
+        <activity
+            android:name="com.admin.nidhi_khushali.Instructions"
+            android:theme="@style/AppTheme2" />
+        <activity android:name="com.admin.nidhi_khushali.CandiGallery" android:theme="@style/AppTHeme3"></activity>
+    </application>
+
+</manifest>
